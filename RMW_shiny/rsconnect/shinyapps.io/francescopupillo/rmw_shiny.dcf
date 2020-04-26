@@ -1,0 +1,10 @@
+name: rmw_shiny
+title:
+username:
+account: francescopupillo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2163911
+bundleId: 3053657
+url: https://francescopupillo.shinyapps.io/rmw_shiny/
+when: 1587626419.40273
