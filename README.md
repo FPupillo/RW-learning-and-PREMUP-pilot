@@ -1,5 +1,5 @@
 # RW-learning-and-PREMUP-pilot
-## 000. Rescorla Wagner Model R
+### 000. Rescorla Wagner Model R
 it containts a function to update the values and prediction error according to RWM. 
 
 001. Rescorla Wagner Model (lambda variable)
