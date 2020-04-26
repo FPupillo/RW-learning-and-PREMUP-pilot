@@ -1,0 +1,7 @@
+Trial condition codes:
+1 - Meddium PE (flat prior -.33-)
+2 - Low PE (strong prior -.80-)
+3 - High PE (strong priot -.10-)
+4 - Fillers
+
+5 - New items

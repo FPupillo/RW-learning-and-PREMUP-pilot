@@ -1,0 +1,26 @@
+files in the "old files" directory
+
+1. Rescorla Wagner Model.R
+This file contains first implementations of rescorla wagner model in R and its adaptation to 
+the PREMUP pilot. They usually have two parameters (alpha and beta), and the beta is set at 1 for 
+matched trials and - beta for unmatched. Also, it implemented matched and unmatched as 0.80 and 0.20 (lambda). Plots are also present
+
+2. RWM phase 1. 
+File that contains implementation of the RW model to PREMUP pilot phase 1. The implementation is made only for one scene over the six possible. It also contains loops to find the optimal parameters
+
+3. RWM parameters
+This csv file contains the parameters extracted with RWM phase 1, forPREMUP phase1, only for scene 4. 
+
+4. Q learning models
+In this file, the RWM formula varies with referenve to the reinforced (1) and non reinforced trials. 
+But these trials refer to whether they are 80% or 20% trials. Parameters are searched through the R squared loop. 
+
+5. Q learning model 2.R
+In this file, that is similar than the previous one, lambda refers still to the frequency of the association (contingency). However, instead of being 1 and 0, this time it is 0.80 and 0.10. 
+
+Learning Rule from Daw
+In the file “estimating parameters by participants”, the parameters alpha, beta, and prediction error were estimated per each scene in the following way. 
+    1. Participants’ actual preference was estimated, as the times participants’ choice was congruent with the scene category that was associated with that particular scene. Namely, for scene 4, category was 1. For scene 5, category was 2, and so on. 
+    2. It was then estimated the probability that participants would make the choice of the category associated 80 % of the time to that scene, according to the updating model in daw (2011). Prediction error was also estimated in that way. 
+    3. After that, we wanted to find the alpha and beta estimates that best explained participants’ behaviour. Therefore, the teoretical probabilities of selecting the wanted category were estimated for several combination of 1000 combinations of betas and alphas (for each alphas , from 0.01 to 1, 10 betas). For each combination, the r squared was computed, as the ration of the sum of square of the model and the total sum of square. The sum of square of the model is the some of square total (the sum of square difference between the actual performance and the mean performance) minus the sume of square residual (it is the sum of empirical – theoretical deviation squres). Therefore, the r squared is the proportion of total variance explained by the model. The algorithm looked for the combination of alpha and beta which maximized the r squared, for each scene and for each participant. 
+

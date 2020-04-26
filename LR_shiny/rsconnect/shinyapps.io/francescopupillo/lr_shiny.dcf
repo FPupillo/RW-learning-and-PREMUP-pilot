@@ -1,0 +1,10 @@
+name: lr_shiny
+title:
+username:
+account: francescopupillo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2165870
+bundleId: 3051013
+url: https://francescopupillo.shinyapps.io/lr_shiny/
+when: 1587576876.69357
